@@ -1,0 +1,16 @@
+﻿<!--=============== SECTION NEWS ===============-->
+<section class="news" id="news">
+    <h2 class="heading">Latest Movie News</h2>
+    <div class="news-container">
+        
+        @foreach(var item in Model.nws){
+            <div class="box">
+                <div class="box-img">
+                    <img src="@item.news_img" alt="">
+                </div>
+                <h5>@item.news_category</h5>
+                <span>@item.news_date</span>
+                <h3>@item.news_text</h3>
+            </div>
+        }
+    </div>
